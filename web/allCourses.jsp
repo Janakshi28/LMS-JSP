@@ -11,7 +11,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-         
+        <!-- Javascript Function --> 
+        <script type="text/javascript">
+            function changeFunc() {
+                var cat_select = document.getElementById("cat_select");
+                var selectedValue = cat_select.options[cat_select.selectedIndex].value;
+                if (selectedValue !== 'all') {
+                    var url = "allCourses.jsp?category=" + selectedValue;
+                }
+                else if (selectedValue == 'all') {
+                    var url = "allCourses.jsp?category=all";
+                }
+                else{
+                    var url = "allCourses.jsp";
+                }
+                window.location.replace(url);
+            }
+        </script>
         
         <title>All Courses</title>
         <meta charset="UTF-8"/>
@@ -37,31 +53,49 @@
                     <h4>All Courses</h4>
                 <label>
                     <span>Select category</span>
-                    <select id="cat_select" name="category">
+                    <%-- Calling JS changeFunc() on select option change event --%>
+                    <select id="cat_select" name="category" onchange="changeFunc();">
                         <option value="">Select the degree</option>
-                        <option value="all">All</option>
+                        <option value="all"><c:if test="${'all' eq param.category}"><c:out value="selected"/></c:if>All</option>
                         
                         <optgroup label="School of Computing">
-                        <option value="Software Engineering">Software Engineering</option>
-                        <option value="Computer Networks and Security">Computer Networks and Security</option>
-                        <option value="Information Systems">Information Systems</option>
+                        <option value="Software Engineering"><c:if test="${'Software Engineering' eq param.category}"><c:out value="selected"/></c:if>Software Engineering</option>
+                        <option value="Computer Networks and Security"><c:if test="${'Computer Networks and Security' eq param.category}"><c:out value="selected"/></c:if>Computer Networks and Security</option>
+                        <option value="Information Systems"><c:if test="${'Information Systems' eq param.category}"><c:out value="selected"/></c:if>Information Systems</option>
                         </optgroup>
                         
                         <optgroup label="Business School">
-                        <option value="International Business Management">International Business Management</option>
-                        <option value="Accounting and Finance">Accounting and Finance</option>
-                        <option value="Events Management">Events Management</option>
-                        <option value="Tourism Management">Tourism Management</option>
+                        <option value="International Business Management"><c:if test="${'International Business Management' eq param.category}"><c:out value="selected"/></c:if>International Business Management</option>
+                        <option value="Accounting and Finance"><c:if test="${'Accounting and Finance' eq param.category}"><c:out value="selected"/></c:if>Accounting and Finance</option>
+                        <option value="Events Management"><c:if test="${'Events Management' eq param.category}"><c:out value="selected"/></c:if>Events Management</option>
+                        <option value="Tourism Management"><c:if test="${'Tourism Management' eq param.category}"><c:out value="selected"/></c:if>Tourism Management</option>
                         </optgroup>
                         
                         <optgroup label="Law School">
-                        <option value="LLB Law">LLB Law</option>
-                        <option value="LLM International Business Law">LLM International Business Law</option>
+                        <option value="LLB Law"><c:if test="${'LLB Law' eq param.category}"><c:out value="selected"/></c:if>LLB Law</option>
+                        <option value="LLM International Business Law"><c:if test="${'LLM International Business Law' eq param.category}"><c:out value="selected"/></c:if>LLM International Business Law</option>
                         </optgroup>
                     
                     </select>
                 </label>
-                          
+                
+                 <%-- Retrieveing data to a datasource using the selected category option --%>   
+                <c:choose>
+                    <c:when test="${param.category != null && param.category ne 'all'}">
+                        <sql:query dataSource="${vle}" var="result">
+                            SELECT * FROM Courses WHERE degree='${param.category}' ORDER BY CRSTITLE DESC
+                        </sql:query>
+                    </c:when>  
+                            
+                    
+                        <c:when test="${param.category eq 'all'}">
+                        <sql:query dataSource="${vle}" var="result">
+                            SELECT * FROM Courses ORDER BY CRSTITLE DESC
+                        </sql:query>
+                        </c:when>    
+                    
+                            
+                </c:choose>     
                             
                 <%-- Design the page according to the values returned --%>
                 <div id="crs_box">
