@@ -1,0 +1,19 @@
+
+
+  Quiz: Q1-WPSJSP 
+  Student ID: S00012    
+
+  Answers: 
+    Q1) 3 
+    Q2) 3 
+    Q3) 3 
+    Q4) 3 
+    Q5) 3 
+    Q6) 3 
+    Q7) 4 
+    Q8) 2 
+    Q9) 1 
+    Q10) 4 
+
+           No of correct answers(Out of 10): 9
+           Marks= 90.0

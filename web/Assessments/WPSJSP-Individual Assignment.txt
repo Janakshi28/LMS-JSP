@@ -1,0 +1,32 @@
+|| A web platform for online classifieds ||
+
+User Features
+
+AdsLanka is an online advertising solution for the Sri Lankan classifieds market. The following features are required.
+
+1.	Signup : A new user should be able to sign up with their contact information
+2.	Edit Account: A user should be able to modify their account information
+3.	Sign in : Registered users can sign in
+4.	Password Reset: Registered users should be allowed to reset the password if the user has forgotten the password
+5.	Advertise Item: A user should be able to provide details about an advertised item
+6.	Home Page: Should show the details of all advertised goods. A title, description and price are essential. You may categorise according to the type of advertisement 
+7.	 Contact Advertiser: A user should be able to contact an advertiser of a product through the web application and offer a price. The user should be able to further query about the advertised item through the web application. All users should be able to view this additional conversation regarding the item
+8.	 View Bids: The advertiser should be able to view the offers that he has received. 
+9.	 Watch List: Users should be able to maintain a watch list of the items they are currently interested in.
+10.	Buy: Registered users are allowed to directly purchase multiple goods. 
+
+You may refer to the following web applications for detailed requirements 
+1.	www.ikman.lk
+2.	www.hitads.lk
+
+
+Technical Requirements
+
+The solution should be based on JSP Model 2 architecture with distinctive Model, View & Controller layers. It is expected that the view should be as declarative as possible and that the view does not have business logic embedded within it. 
+
+You may use a Derby or MySQL database. 
+
+You are required to use demonstrate the use of sessions through suitable functionality. 
+
+
+ 

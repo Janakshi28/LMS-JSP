@@ -1,0 +1,12 @@
+	|| JSP - Custom Tags ||
+
+A custom tag is a user-defined JSP language element. When a JSP page containing a custom tag is
+translated into a servlet, the tag is converted to operations on an object called a tag handler. The
+Web container then invokes those operations when the JSP page's servlet is executed.
+
+JSP tag extensions let you create new tags that you can insert directly into a JavaServer Page just
+as you would the built-in tags you learned about in earlier chapter. The JSP 2.0 specification
+introduced Simple Tag Handlers for writing these custom tags.
+
+To write a customer tab you can simply extend SimpleTagSupport class and override the doTag
+method, where you can place your code to generate content for the tag.

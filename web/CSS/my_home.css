@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 15, 2016, 12:20:54 PM
+    Author     : Janakshi
+*/
+
+#selectionbar2 {
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 0px
+}
+
+ /* According to www.w3schools.com (2016)*/
+ 
+ 
+ #main_navibar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+ #myFrame {  
+     position:absolute;
+     right: 80px;
+     top: 120px;
+     margin-top: 5px;
+     margin-right: 80px
+         
+ }

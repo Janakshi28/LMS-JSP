@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 1, 2016, 10:38:18 AM
+    Author     : Janakshi
+*/
+@charset "utf-8";
+
+#loginbox {
+	position: relative;
+        float: left;
+	border: thin #444 solid;
+	background: #E2FEFC;
+	width: 40%;
+        margin-top: 20px;
+        margin-left: 5px;
+	padding: 30px 30px 30px 30px;
+	border-radius: 10px 10px 10px 10px;
+ }
+
+	#loginbox p {line-height: 0px;}
+
+	#loginbox img {
+		width: 40px;
+		height: 40px;
+		float: left;
+	 }
+
+#infobox {
+	position: relative;
+        float: right;
+	display: inline-table;
+	width: 50%;
+ }
+
+	#infobox p {
+		position: relative;
+		font-size: 15px;
+		color: gray;
+		line-height: 20px;
+		left: 97px;
+	 }
+
+	#infobox img {
+		position: relative;
+		left: 0px;
+		height: 75px;
+		width: 75px;
+	 }
+
+.submit {
+	-moz-box-shadow: inset 0px 0px 9px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 0px 9px 0px #ffffff;
+	box-shadow: inset 0px 0px 9px 0px #ffffff;
+	background-color: #ededed;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+	text-indent: 0;
+	border: 2px solid #dcdcdc;
+	display: inline-block;
+	color: #777777;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	height: 40px;
+	line-height: 30px;
+	width: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+ }
+
+	.submit:hover {background-color: #dfdfdf;}
+
+	.submit:active {
+		position: relative;
+		top: 1px;
+	 }
+
+.inputdetails {
+	border: 1px solid #ccc;
+	border-radius: 0 4px 4px 0;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+	font-size: 16px;
+	padding: 8px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+ }
+
+#error_message {
+    position: absolute;
+	color: red;
+	top: 160px;
+        left: 130px
+ }
+ 
+ #welcome_txt {
+     margin-bottom: 40px;
+ }
+
+#icon1 {top: 0;}
+
+#icon2 {top: -50px;}
+
+#icon3 {top: -100px;}
+
+#text1 {top: -65px;}
+
+#text2 {top: -130px;}
+
+#text3 {top: -170px;}
+
+.forgottext {
+	text-decoration: none;
+	font-size: 14px;
+	color: gray;
+	margin-bottom: 0;
+ }
+
+	.forgottext:hover {text-decoration: underline;}
+
+a {text-decoration: none;}

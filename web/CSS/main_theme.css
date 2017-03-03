@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 2, 2016, 1:52:09 PM
+    Author     : Janakshi
+*/
+
+@charset "utf-8";
+
+div {display: block;}
+
+/* Header elements */
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	height: 40px;
+	background-color: #CBDDDE;
+	border-bottom: 1px solid #B0E0E6;
+ }
+
+	.header #logo {
+		position: absolute;
+		left: 9.5%;
+		height: 100%;
+		width: 11%;
+		float:left;
+		-moz-transition-property: opacity; /* Firefox 4 */
+		-moz-transition-duration: 1s;
+		-webkit-transition-property: opacity; /* Safari and Chrome */
+		-webkit-transition-duration: 1s;
+		-o-transition-property: opacity; /* Opera */
+		-o-transition-duration: 1s;
+		transition-property: opacity;
+		transition-duration: 1s;
+                background-color:#F0F8FF;
+	 }
+
+		.header #logo:hover {opacity: 0.3;}
+
+	.header #topic {
+		font-size: 9px;
+		position: absolute;
+		float: left;
+		left: 22%;
+		top: 10%;
+	 }
+
+	.header #name {
+		position: absolute;
+		left: 22.5%;
+		float: left;
+		top: 40%;
+                font-weight: bolder;
+                color: black;
+                overflow: hidden;
+                width:7%;
+	 }
+         
+         .header #name:hover, .header #name:active {
+                text-decoration: underline;
+                animation: marquee 15s linear infinite;
+         }
+         
+         .header #webspace {
+             position: absolute;
+             left: 29%;
+             top:9%;
+             height: 36px;
+             margin-top: 0px;
+             padding-left: 5px;
+             list-style-type: none;
+             border-left: medium black solid;
+         }
+         
+         .header #opac{
+             position: absolute;
+             left: 33%;
+             top:9%;
+             height: 36px;
+             padding-left: 5px;
+             padding-right: 5px;
+             list-style-type: none;
+             margin-top: 0px;
+             border-left: medium black solid;
+             border-right: medium black solid;
+         }
+
+	.header #navibar {
+		position: absolute;
+		right: 10%;
+		float: right;
+                margin-top: 5px;
+		list-style-type: none;
+		overflow: hidden;
+		height: 40px;
+	 }
+
+		.header #navibar>li {
+			float: left;
+			border-left-style: solid;
+			border-left-color: #999;
+			border-left-width: medium;
+		 }
+
+	.header .navilink:link, .header .navilink:visited {
+		display: block;
+		text-decoration: none;
+		width: 7em;
+		font-weight: bold;
+		color: black;
+		background-color: #CBDDDE;
+		text-align: center;
+		padding: 4px;
+		text-transform: uppercase;
+		-webkit-transition-property: color, background-color; /* Safari and Chrome */
+		-webkit-transition-duration: 0.5s;
+		-moz-transition-property: color, background-color; /* Firefox 4 */
+		-moz-transition-duration: 0.5s;
+		-o-transition-property: color, background-color; /* Opera */
+		-o-transition-duration: 0.5s;
+		transition-property: color, background-color;
+		transition-duration: 0.5s;
+	 }
+
+	.header .navilink:hover, .navilink:active {
+		background-color: black;
+		color: white;
+	 }
+
+/* Body elements */
+.body {
+	background-color:#F0F8FF;
+	margin-left: 9.5%;
+	padding: 75px 20px 20px 20px;
+	width: 1050px;
+        height: 1500px;
+        display: inline-table;
+ }
+ 
+ .warning_box {
+       margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	background: #F2F5A9;
+	padding: 0px 15px 0px 10px;
+	border: 1px solid #E4E4E4;  
+        margin-bottom: 10px;
+        line-height: 1.5em;
+}
+
+.success_box {
+       margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	background: #C6FFD2;
+	padding: 0px 15px 0px 10px;
+	border: 1px solid #E4E4E4;  
+        margin-bottom: 10px;
+        line-height: 1.5em;
+}
+
+.error_box {
+       margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	background: #F5A9A9;
+	padding: 0px 15px 0px 10px;
+	text-shadow: 1px 1px 1px #A4A4A4;
+	border: 1px solid #E4E4E4;  
+        margin-bottom: 10px;
+}
+
+.normal_box {
+       margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	background: white;
+	padding: 0px 15px 0px 10px;
+	text-shadow: 1px 1px 1px #A4A4A4;
+	border: 1px solid #E4E4E4;  
+        margin-bottom: 10px;
+}
+
+.warning_box a, .warning_box a:visited, .success_box a, .success_box a:visited {
+    text-decoration: none;
+}
+
+.warning_box a:hover, .success_box a:hover {
+    text-decoration: underline;
+}
+
+.warning_message, .error_message {
+    color: black;
+    font-size: 14px;
+}
+
+ /*Footer elements */
+ .footer {
+     clear: both;
+     background: black;
+     color: white;
+     margin-top:200px
+ }
+ 
+ .footer p { margin-left: 150px}
+
+/* HTML body elements */
+body {
+	font-family: Arial, Geneva, Arial, helvetica, sans-serif;
+        line-height: 20px;
+	background-image: url(/VirtualClassroom/images/background-5.jpg);
+	margin: auto;
+	background-attachment: fixed;
+        min-width: 900px;
+ }
+
+td {font-family: Verdana, Geneva, Arial, helvetica, sans-serif;}
+
+th {font-family: Verdana, Geneva, Arial, helvetica, sans-serif;}
+
+

@@ -1,0 +1,9 @@
+|| OOEDP Individual Assignment ||
+
+1.	INTRODUCTION
+
+This assignment requires developing a GUI based program which will have a set of classes based on the following problem description and requirements. Although the assignment carries 100%, it is worth only 50% of the overall assessment for this module. In order to achieve a good mark you need to apply object oriented principles in your assignment, to create an event driven program (GUI based application). 
+
+2.	PROBLEM DESCRIPTION
+An educational institution is planning to computerize their manual processes to provide secure and productive services to their staff and students. The institute has decided to automate their entire process starting from Registration of the student upto their Graduation. Apart from capturing student’s information, this system should also record students’ academic performances, payments and lecture schedules. The system should also provide statistical data as part of reports.
+You need to implement the system, which will have the following features taking into account the stated assumptions.

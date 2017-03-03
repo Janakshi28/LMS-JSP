@@ -1,0 +1,23 @@
+|| WPSJSP - Individual Assignment  ||
+Piyumi Liyanarachchi (S00023 )
+
+1. Overview
+AdsLanka, developed by the author is an online advertising solution for Sri Lankan classifieds market. The application was developed by using JSP and Java Servlets. The backend database was chosen to be Oracle MySQL.
+The application covers almost all of the basic requirements like;
+•	Sign up as new users
+•	Edit account of a registered user
+•	Sign in 
+•	Password reset
+•	Advertise a new item
+•	Commenting and contacting an advertiser
+•	Offering a price
+•	Buying products
+However in addition to the above features, the author has introduced some new elements so that the quality of the end product is acceptable.
+•	Editing an advertisement by its owner
+•	Notification System – Where owner is notified when his/her items are being sold or a new offer is being made
+•	Advertisements are categorised into categories and users can choose to view the advertisements in that chosen category only
+•	Users can search for advertisements
+•	Users can change their password
+•	Users can see the offer that they sent for a particular item, and can delete it if they want to
+
+All the model classes, Database and its tables and view JSP pages along with its CSS design were developed by the author from the ground up using Netbeans 8.0 and Dreamviwer CS6.
